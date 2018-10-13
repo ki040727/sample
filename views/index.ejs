@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>hello guys!</p>
+
+    <input type = "TEXT" size = "20" id="InputText">
+
+    <input type = "button" value = "alert" onClick="alert(inputText.text());"><br>
+    <%= title + "1234"%><BR><BR>
+    <%= 3*2*7 %>
+    <% for(var i=0; i <5 ; i++){ %>
+    <%= i + "* 2 = "  + i *2 %><BR>
+    <% } %>
+  </body>
+</html>

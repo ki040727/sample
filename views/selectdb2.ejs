@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>조회결과2</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<table width='600' border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+    <tr>
+        <td width="20%">번호</td>
+        <td width="20%">회원ID</td>
+        <td width="20%">회원성명</td>
+        <td width="100%">주소</td>
+    </tr>
+    <% for(var i=0; i<data.length;i++ ){ %>
+        <tr>
+            <td><%= i+1 %></td>
+            <td><%= data[i].id %></td>
+            <td><%= data[i].name %></td>
+            <td><%= data[i].addreass %></td>
+        </tr>
+    <% } %>
+</table>
+</body>
+</html>

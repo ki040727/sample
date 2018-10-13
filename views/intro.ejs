@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<form action="/result" method="post">
+    이름 : <br>
+    <input type="text" name="name" value="">
+    <br>
+    전화번호 :<br>
+    <input type="text" name="tel_num" value="">
+    <br><br>
+
+    <select name="phone">
+        <option value="lg">LG V시리즈</option>
+        <option value="sam">삼성 S시리즈</option>
+        <option value="app">애플 시리즈</option>
+    </select>
+    <br><br>
+    <input type="submit" value="입력완료">
+</form>
+</body>
+</html>
